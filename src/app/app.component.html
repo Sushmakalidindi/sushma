@@ -1,0 +1,39 @@
+<head>
+  <title>SHOPPING CART</title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="header">
+    <mat-toolbar class="bars">
+      <button
+        mat-icon-button
+        class="symbol-menu"
+        aria-label="Example icon-button with menu icon"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="grid"><span class="sample">MY APP</span></div>
+      <span class="sam"></span>
+      <button class="product-link" (click)="onButtonClicked()">Product</button>
+      <button
+        mat-icon-button
+        class="favorite-symbol"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="share"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </nav>
+  <router-outlet></router-outlet>
+</body>
